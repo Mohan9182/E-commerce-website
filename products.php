@@ -6,10 +6,10 @@ require("includes/common.php");
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Products | Life Style Store</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
-		<link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -31,10 +31,10 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/5.jpg" alt="">
                         <div class="caption">
-                            <h3>Cannon </h3>
+                            <h3>Cannon EOS </h3>
                             <p>Price: Rs. 36000.00 </p>
                             <?php if (!isset($_SESSION['email'])) { ?>
-                                <p><a href="login.php" role="button" class="btn btn-danger">Buy Now</a></p>
+                                <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
                                 <?php
                             } else {
                                 //We have created a function to check whether this particular product is added to cart or not.
@@ -42,7 +42,7 @@ require("includes/common.php");
                                     echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
                                 } else {
                                     ?>
-                                    <a href="cart-add.php?id=1" name="add" value="add" class="btn btn-danger">Add to cart</a>
+                                    <a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-danger">Add to cart</a>
                                     <?php
                                 }
                             }
@@ -55,7 +55,7 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/2.jpg" alt="">
                         <div class="caption">
-                            <h3>Nikon  </h3>
+                            <h3>Nikon EOS </h3>
                             <p>Price: Rs. 40,000.00 </p>
                             <?php if (!isset($_SESSION['email'])) { ?>
                                 <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
@@ -80,7 +80,7 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/3.jpg" alt="">
                         <div class="caption">
-                            <h3>Sony </h3>
+                            <h3>Sony DSLR</h3>
                             <p>Price: Rs. 50000.00</p>
                             <?php if (!isset($_SESSION['email'])) { ?>
                                 <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
@@ -105,7 +105,7 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/4.jpg" alt="">
                         <div class="caption">
-                            <h3>Olympus </h3>
+                            <h3>Olympus DSLR</h3>
                             <p>Price: Rs. 50000.00</p>
                             <?php if (!isset($_SESSION['email'])) { ?>
                                 <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
@@ -132,7 +132,7 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/18.jpg" alt="">
                         <div class="caption">
-                            <h3>Titan </h3>
+                            <h3>Titan Model #301 </h3>
                             <p>Price: Rs. 13000.00 </p>
                             <?php if (!isset($_SESSION['email'])) { ?>
                                 <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
@@ -157,7 +157,7 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/19.jpg" alt="">
                         <div class="caption">
-                            <h3>Titan</h3>
+                            <h3>Titan Model #201</h3>
                             <p>Price: Rs. 3000.00 </p>
                             <?php if (!isset($_SESSION['email'])) { ?>
                                 <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
@@ -182,7 +182,7 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/20.jpg" alt="">
                         <div class="caption">
-                            <h3>HMT </h3>
+                            <h3>HMT Milan</h3>
                             <p>Price: Rs. 8000.00 </p>
                             <?php if (!isset($_SESSION['email'])) { ?>
                                 <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
@@ -207,7 +207,7 @@ require("includes/common.php");
                     <div class="thumbnail">
                         <img src="img/21.jpg" alt="">
                         <div class="caption">
-                            <h3>Faber </h3>
+                            <h3>Faber Luba #111 </h3>
                             <p>Price: Rs. 18000.00 </p>
                             <?php if (!isset($_SESSION['email'])) { ?>
                                 <p><a href="login.php" role="button" class="btn btn-danger btn-block">Buy Now</a></p>
